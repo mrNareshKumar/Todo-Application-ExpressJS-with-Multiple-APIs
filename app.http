@@ -38,7 +38,7 @@ GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
 //API:2 => Path: /todos/:todoId/
 //Description: Returns a specific todo based on the todo ID
 ###
-GET http://localhost:3000/todos/7/
+GET http://localhost:3000/todos/1/
 
 //API:3 => Path: /agenda/
 //Description: Returns a list of all todos with a specific due date in the query parameter /agenda/?date=2021-12-12
@@ -64,7 +64,7 @@ Content-Type: application/json
 //Description: Updates the details of a specific todo based on the todo ID
 //Scenario 1: Request: { "status": "DONE" }, Response: Status Updated
 ###
-PUT http://localhost:3000/todos/7/
+PUT http://localhost:3000/todos/1/
 Content-Type: application/json
 
 { "status": "DONE" }
